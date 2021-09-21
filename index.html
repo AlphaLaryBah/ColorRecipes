@@ -8,40 +8,84 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+)RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <title>Color Recipes</title>
 </head>
 
 <body>
+  <h1 class='text-center'> Create your colors:</h1>
+  <div class="table-responsive">
+    <!-- <div class="row"> -->
+    <!-- <div class="col"> -->
 
-  <form name='clor'>
 
-    <input id="displ" name='display' >
+    <!-- </div> -->
 
-    <input type=button value="Red" onclick="clor.display.value+='Red'" style="background-color:red ;">
+    <table class="table table-dark table-hover ">
+      <thead>
+        <tr>
+          <th scope="col">Color One</th>
+          <th scope="col">and</th>
 
-    <input type=button value="+" onclick="clor.display.value+= '+'">
+          <th scope="col">Color Two</th>
 
-    <input type=button value="Blue" onclick="clor.display.value+='Blue'" style="background-color:blue ;">
+          <th scope="col">New Color <div class='center'>
+              <div id="boxRB" class="box"></div>
+            </div>
+          </th>
+          <th scope="col">Clear</th>
+        </tr>
+      </thead>
+      <tbody>
+        <form name='clor'>
+          <tr class="">
+            <th scope="row"><input type=button value="Red" onclick="clor.display.value+='Red'" class='btn btn-outline-danger'></th>
+            <td><input type=button value="+" onclick="clor.display.value+= '+'" class='btn btn-light text-dark rounded-circle '></td>
+            <td><input type=button value="Blue" class='btn btn-outline-primary' onclick="displayColor()">
+            </td>
+            <td> <input id="displRB" name='display' class="btn text-center "></td>
 
-    <input id="colr" type=button value="=" onclick="displayColor()">
+            <td> <button value="Clear" id="clearRB" class='btn btn-outline-dark' onclick="clor.display.value=''"><i class="bi bi-trash-fill text-danger"></i></button>
+            </td>
 
-    <input type=button value="Clear" onclick="clor.display.value=''">
+          </tr>
+        </form>
 
-  </form>
-<div  class='center'>
-    <div id="box"class="box">
+         <form name='clorRG'>
+          <tr class="">
+            <th scope="row"><input type=button value="Red" onclick="clor.display.value+='Red'" class='btn btn-outline-danger'></th>
+            <td><input type=button value="+" onclick="clor.display.value+= '+'" class='btn btn-light text-dark rounded-circle '></td>
+            <td><input type=button value="Green" class='btn btn-outline-success' onclick="displayColor()">
+            </td>
+            <td> <input id="displRG" name='display' class="btn text-center "></td>
 
-    </div>
-</div>
+            <td> <button value="Clear" id="clearRG" class='btn btn-outline-dark' onclick="clor.display.value=''"><i class="bi bi-trash-fill text-danger"></i></button>
+            </td>
+
+          </tr>
+        </form>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  </div>
+
+
   <script src="index.js"></script>
 
-   <!-- jQuery, then Popper.js, Bootstrap JavaScript plugins.-->
+  <!-- jQuery, then Popper.js, Bootstrap JavaScript plugins.-->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
+<!-- style="background-color:red ;" -->
