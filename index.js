@@ -25,19 +25,18 @@ function displayColorRG() {
 // RED and YELLOW
 
 function displayColorRY() {
-    let displRY = document.getElementById('displRY');
-    displRY.value = 'Orange';
-    displRY.style.color = 'white'
-    displRY.style.backgroundColor = displRY.value
+  let displRY = document.getElementById('displRY');
+  displRY.value = 'Orange';
+  displRY.style.color = 'white'
+  displRY.style.backgroundColor = displRY.value
 }
 
 
 // RED and WHITE
 
 function displayColorRW() {
-    let displRW = document.getElementById('displRW');
-    displRW.value = 'Pink';
-    displRW.style.color = 'white'
-    displRW.style.backgroundColor = displRW.value
+  let displRW = document.getElementById('displRW');
+  displRW.value = 'Pink';
+  displRW.style.color = 'white'
+  displRW.style.backgroundColor = displRW.value
 }
-
